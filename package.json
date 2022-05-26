@@ -1,0 +1,41 @@
+{
+  "name": "dranik",
+  "version": "0.1.0",
+  "description": "Start template for web development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "serve": "webpack serve",
+    "lint": "npx eslint src --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KennyNobody/dranik.git"
+  },
+  "keywords": [
+    "webpack",
+    "scss"
+  ],
+  "author": "Egor Badulin (nobodykenny@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KennyNobody/dranik/issues"
+  },
+  "homepage": "https://github.com/KennyNobody/dranik#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.16.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "sass": "^1.52.1",
+    "sass-loader": "^13.0.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
