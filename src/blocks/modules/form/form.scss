@@ -1,0 +1,92 @@
+.form {
+    padding: rem(70) rem(96) rem(104) rem(96);
+    background-color: $light;
+    position: relative;
+    @include r(1200) {
+        padding: rem(60) rem(16) rem(47) rem(16);
+    }
+    &__header {
+        margin-bottom: rem(50);
+        @include r(1200) {
+            margin-bottom: rem(31);
+        }
+    }
+    &__title {
+        font-size: rem(50);
+        font-weight: 700;
+        color: $dark-font;
+        margin-bottom: rem(20);
+        @include r(1200) {
+            font-size: rem(40);
+            margin-bottom: 0;
+        }
+    }
+    &__discription {
+        font-size: rem(18);
+        color: $grey;
+        @include r(1200) {
+            
+        }
+    }
+    &__main {
+        display: grid;
+        gap: rem(20) rem(30);
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        margin-bottom: rem(30);
+        @include r(1200) {
+            grid-template-columns: minmax(0, 1fr);
+            gap: rem(20);
+        }
+    }
+    &__footer {
+        display: grid;
+        align-items: center;
+        gap: rem(20) rem(30);
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        @include r(1200) {
+            grid-template-columns: minmax(0, 1fr);
+            gap: rem(20);
+        }
+    }
+    &__button {
+        width: 100%;
+    }
+    &__message {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: rem(18);
+        background-color: $light;
+        text-align: center;
+        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
+        &--visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        &-icon {
+            display: block;
+            width: rem(46);
+            height: rem(46);
+            margin-bottom: rem(18);
+        }
+        &-title {
+            font-weight: 700;
+            font-size: rem(36);
+            color: $dark-font;
+        }
+        &-text {
+            color: $blue;
+            font-weight: 300;
+        }
+    }
+    .is-close {
+        top: 0;
+    }
+}

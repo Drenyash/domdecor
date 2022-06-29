@@ -1,0 +1,13 @@
+.body {
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: $font-main;
+    font-weight: 400;
+    color: $grey;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    overflow-x: hidden;
+    @include r(1200) {}
+}
