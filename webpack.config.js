@@ -44,6 +44,10 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.svg$/,
+                use: ['svg-sprite-loader', 'svgo-loader']
+            },
+            {
                 test: /\.(s*)css$/,
                 use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
             },
@@ -52,9 +56,9 @@ module.exports = {
                 type: "asset/resource",
             },
             {
-                test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+                test: /\.(woff(2)?|eot|ttf|otf)$/,
                 type: "asset/inline",
-            },
+            }
         ],
     },
 };
