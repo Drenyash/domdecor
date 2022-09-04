@@ -1,14 +1,16 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: "development",
     entry: path.resolve(__dirname, "./src/js/index.js"),
     output: {
         path: path.resolve(__dirname, "./dist"),
-        filename: "bundle.js",
+        filename: "js/bundle.js",
     },
     devtool: false,
     devServer: {
@@ -20,7 +22,7 @@ module.exports = {
             progress: true,
         },
         open: true,
-        watchFiles: ["src/*.html", "src/css/*.css"],
+        watchFiles: ["src/*.html", "src/pages/*.html", "src/css/*.css"],
         hot: true,
         compress: false,
         port: 9000,
@@ -40,12 +42,44 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: './css/[name].css',
         }),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: "src/assets/images",
+                    to: "./assets/images/",
+                    noErrorOnMissing: true
+                },
+                {
+                    from: "src/assets/favicons",
+                    to: "./assets/favicons/",
+                    noErrorOnMissing: true
+                },
+                {
+                    from: "src/assets/fonts",
+                    to: "./assets/fonts/",
+                    noErrorOnMissing: true
+                },
+            ],
+        }),
     ],
     module: {
         rules: [
             {
                 test: /\.(s*)css$/,
-                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            url: false,
+                        }
+                    },
+                    {
+                        loader: 'sass-loader'
+                    }
+                ]
             },
             {
                 test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
@@ -54,6 +88,15 @@ module.exports = {
             {
                 test: /\.(woff(2)?|eot|ttf|otf)$/,
                 type: "asset/inline",
+            },
+            {
+                test: /\.svg$/,
+                loader: 'svg-sprite-loader',
+                options: {
+                    extract: true,
+                    spriteFilename: 'sprite.svg',
+                    publicPath: '/assets/sprite/'
+                }
             }
         ],
     },

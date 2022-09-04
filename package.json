@@ -25,6 +25,7 @@
   "homepage": "https://github.com/KennyNobody/dranik#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
     "eslint": "^8.16.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -37,11 +38,12 @@
     "svg-transform-loader": "^2.0.13",
     "svgo-loader": "^3.0.0",
     "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2",
+    "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.0"
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "normalize.css": "^8.0.1"
+    "modern-css-reset": "^1.4.0",
+    "swiper": "^8.3.2"
   }
 }
