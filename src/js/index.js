@@ -1,6 +1,6 @@
-import "normalize.css";
+import "modern-css-reset";
 import "../css/main.scss";
-import '../img/sprite/icon-camera.svg';
+
 
 document.addEventListener('DOMContentLoaded', () => {
     

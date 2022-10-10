@@ -1,9 +1,15 @@
 const path = require("path");
+const fs = require('fs');
+
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+// Insludes
+const head = fs.readFileSync(__dirname + '/src/includes/head.html');
+
 
 module.exports = {
     mode: "development",
@@ -32,6 +38,8 @@ module.exports = {
             template: path.resolve(__dirname, "./src/index.html"),
             filename: "index.html",
             inject: "body",
+            title: "GetWidget - Сделайте свой сайт эффективнее без программирования",
+            head,
         }),
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: [
