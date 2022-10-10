@@ -10,7 +10,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // Insludes
 const head = fs.readFileSync(__dirname + '/src/includes/head.html');
 
-
 module.exports = {
     mode: "development",
     entry: path.resolve(__dirname, "./src/js/index.js"),
@@ -69,6 +68,7 @@ module.exports = {
                 },
             ],
         }),
+        new SpriteLoaderPlugin()
     ],
     module: {
         rules: [

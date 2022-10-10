@@ -1,5 +1,5 @@
-// import archive from '../assets/sprite/icon-archive.svg';
-//
-// export default {
-//     archive,
-// };
+import camera from '../assets/sprite/icon-camera.svg';
+
+export default {
+    camera,
+};
