@@ -1,5 +1,6 @@
-const path = require("path");
 const fs = require('fs');
+const path = require('path');
+const pages = require('./src/js/pages');
 
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -9,6 +10,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // Insludes
 const head = fs.readFileSync(__dirname + '/src/includes/head.html');
+const sectionHeader = fs.readFileSync(__dirname + '/src/includes/section-header.html');
+const sectionFooter = fs.readFileSync(__dirname + '/src/includes/section-footer.html');
 
 module.exports = {
     mode: "development",
@@ -33,13 +36,25 @@ module.exports = {
         port: 9000,
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, "./src/index.html"),
-            filename: "index.html",
-            inject: "body",
-            title: "GetWidget - Сделайте свой сайт эффективнее без программирования",
-            head,
-        }),
+        // new HtmlWebpackPlugin({
+        //     template: path.resolve(__dirname, "./src/index.html"),
+        //     filename: "index.html",
+        //     inject: "body",
+        //     title: "Dranik",
+        //     head,
+        //     sectionHeader,
+        //     sectionFooter
+        // }),
+        // new HtmlWebpackPlugin({
+        //     template: path.resolve(__dirname, "./src/pages/page.html"),
+        //     filename: "page.html",
+        //     inject: "body",
+        //     title: "Title child page | Dranik",
+        //     head,
+        //     sectionHeader,
+        //     sectionFooter
+        // }),
+        ...pages,
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: [
                 '**/*',
