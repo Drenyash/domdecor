@@ -1,7 +1,3 @@
-import "modern-css-reset";
-import "../css/main.scss";
-import "./sprite";
-
-document.addEventListener("DOMContentLoaded", () => {
-    
-});
+import 'the-new-css-reset/css/reset.css';
+import './sprite';
+import '../css/main.scss';
