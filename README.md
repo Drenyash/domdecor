@@ -1,10 +1,9 @@
 # dranik
 Start template - webpack/scss
 
-## API
+## CSS
 
-В проект включен [JSON server](https://github.com/typicode/json-server) для имитации API. Данные хранятся в файле data.json в корне проекта. Сервер доступен по адресу `http://localhost:3001/`  
-Запустить сервер: `npm run server`
+Все пишем в scss и в БЭМ. Стили библиотек импортируем в `src\js\index.js`;
 
 ## SVG
 
@@ -22,3 +21,8 @@ Start template - webpack/scss
 
 HTML-части лежат в папке `src\includes`  
 Они импортируются в файл `src\js\pages.js`, там же определяются новые страницы и заголовок страницы
+
+## API
+
+В проект включен [JSON server](https://github.com/typicode/json-server) для имитации API. Данные хранятся в файле data.json в корне проекта. Сервер доступен по адресу `http://localhost:3001/`  
+Запустить сервер: `npm run server`
