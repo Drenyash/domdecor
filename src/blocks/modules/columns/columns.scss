@@ -1,11 +1,11 @@
 .columns {
+    gap: rem(30);
     display: grid;
-    grid-template-columns:  minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     grid-auto-flow: dense;
     grid-template-rows: minmax(0, 1fr);
-    gap: rem(30);
+    grid-template-columns:  minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     @include r(1200) {
-        gap: 0;
+        //gap: 0;
     }
     &__col {
         position: relative;

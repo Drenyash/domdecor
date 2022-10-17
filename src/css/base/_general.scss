@@ -33,29 +33,15 @@ button {
     }
 }
 
-// .desktop-hidden {
-//     display: none !important;
-//     visibility: hidden;
-//     @include r(1200) {
-//         visibility: visible;
-//         display: block !important;
-//     }
-//     &--flex {
-//         @include r(1200) {
-//             display: flex !important;
-//         }
-//     }
-//     &--grid {
-//         @include r(1200) {
-//             display: flex !important;
-//         }
-//     }
-// }
+ .desktop-hidden {
+     display: none;
+     visibility: hidden;
+     @include r(1200) {
+         display: block;
+         visibility: visible;
+     }
+ }
 
-[disabled] {
-    opacity: 0.5;
-    pointer-events: none !important;
-}
 
 .order-m {
     &-1 {
@@ -107,4 +93,9 @@ button {
 
 .center {
     text-align: center;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
 }
