@@ -36,24 +36,6 @@ module.exports = {
         port: 9000,
     },
     plugins: [
-        // new HtmlWebpackPlugin({
-        //     template: path.resolve(__dirname, "./src/index.html"),
-        //     filename: "index.html",
-        //     inject: "body",
-        //     title: "Dranik",
-        //     head,
-        //     sectionHeader,
-        //     sectionFooter
-        // }),
-        // new HtmlWebpackPlugin({
-        //     template: path.resolve(__dirname, "./src/pages/page.html"),
-        //     filename: "page.html",
-        //     inject: "body",
-        //     title: "Title child page | Dranik",
-        //     head,
-        //     sectionHeader,
-        //     sectionFooter
-        // }),
         ...pages,
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: [

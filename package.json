@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "serve": "webpack serve",
-    "server": "json-server -p3001 --watch data.json"
+    "server": "json-server -p3001 --watch data.json",
+    "lint": "npx eslint src/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -27,10 +28,14 @@
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
-    "eslint": "^8.25.0",
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "html-webpack-plugin": "^5.5.0",
     "json-server": "^0.17.0",
     "mini-css-extract-plugin": "^2.6.1",
+    "prettier": "^2.7.1",
     "sass": "^1.55.0",
     "sass-loader": "^13.1.0",
     "svg-sprite-loader": "^6.0.11",

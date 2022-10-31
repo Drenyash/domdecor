@@ -1,5 +1,5 @@
-import camera from '../assets/sprite/icon-camera.svg';
+import camera from "../assets/sprite/icon-camera.svg";
 
 export default {
-    camera,
+    camera
 };
