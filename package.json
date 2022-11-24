@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/KennyNobody/dranik#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
@@ -35,6 +36,7 @@
     "html-webpack-plugin": "^5.5.0",
     "json-server": "^0.17.0",
     "mini-css-extract-plugin": "^2.6.1",
+    "postcss-loader": "^7.0.1",
     "prettier": "^2.7.1",
     "sass": "^1.55.0",
     "sass-loader": "^13.1.0",
@@ -50,5 +52,13 @@
     "modern-css-reset": "^1.4.0",
     "swiper": "^8.4.4",
     "the-new-css-reset": "^1.7.3"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie < 11",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ]
 }
