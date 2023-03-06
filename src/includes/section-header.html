@@ -1,11 +1,275 @@
 <header class="section header">
-    <div class="container">
-        <div class="header__top">
-            <select name="#" id="#" class="header__place">
-                <option>Краснодар</option>
-                <option>Калининград</option>
-            </select>
-            <h1>Hello world</h1>
+    <div class="header__top">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__left">
+                    <div class="header__select select">
+                        <select name="place" id="place">
+                            <option value="Краснодар">Краснодар</option>
+                        </select>
+                        <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 0.5L5 4.5L9 0.5" stroke="#4A4A4A" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="header__work-time">
+                        <span>пн-пт: 09:00 – 21:00</span>
+                        <span>сб-вс: 09:00 – 18:00</span>
+                    </p>
+                </div>
+                <div class="header__right">
+                    <p class="header__text header__text_primary">Обратный звонок</p>
+                    <a class="header__text" href="tel:8(800)3070500">8&nbsp;(800)&nbsp;3070&nbsp;500</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__body">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__left">
+                    <a href="./index.html" class="header__logo">
+                        <img src="assets/images/logo.svg" alt="Логотип">
+                    </a>
+                    <div class="header__catalog">
+                        <a href="#" class="header__catalog__link" data-catalog-elem>
+                            <img src="assets/images/cascad.svg" alt="">
+                            Каталог
+                            <svg class="header__icon" width="10" height="5" viewBox="0 0 10 5" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 0.5L5 4.5L9 0.5" stroke="#4A4A4A" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <nav class="header__nav nav" data-nav>
+                        <a href="#" class="nav__link">Услуги</a>
+                        <a href="#" class="nav__link">Блог</a>
+                        <a href="#" class="nav__link">Контакты</a>
+                    </nav>
+                </div>
+                <div class="header__user-nav user-nav">
+                    <div class="search">
+                        <img src="assets/images/search.svg" alt="">
+                        <input type="text" placeholder="Введите запрос">
+                    </div>
+                    <ul class="user-nav__list">
+                        <li class="user-nav__elem">
+                            <img src="assets/images/layout.svg" alt="">
+                            <span class="user-nav__text">Проекты</span>
+                        </li>
+                        <li class="user-nav__elem user-nav__elem-basket">
+                            <img src="assets/images/basket.svg" alt="">
+                            <span class="user-nav__text">Корзина</span>
+                            <span class='user-nav__count'>22</span>
+                        </li>
+                        <li class="user-nav__elem">
+                            <img src="assets/images/user.svg" alt="">
+                            <span class="user-nav__text">Личный кабинет</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__footer" data-header-footer>
+        <div class="container">
+            <ul class="header__list menu" data-menu>
+                <li class="header__elem menu__item" data-menu-item>
+                    <p>Лепнина</p>
+                    <svg class="header__icon" width="10" height="5" viewBox="0 0 10 5" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 0.5L5 4.5L9 0.5" stroke="#4A4A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="menu__dropdown" data-dropdown>
+                        <div class="container">
+                            <div class="menu__wrapper">
+                                <div class="menu__col">
+                                    <h3 class="menu__title">Заголовок</h3>
+                                    <ul class="menu__list">
+                                        <li class="menu__item-inner">
+                                            <a href="#">Карнизы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Молдинги</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Плинтусы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Архитравы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Колонны и полуколонны</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Кессоны и купола</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu__col">
+                                    <h3 class="menu__title">Заголовок</h3>
+                                    <ul class="menu__list">
+                                        <li class="menu__item-inner">
+                                            <a href="#">Карнизы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Молдинги</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Плинтусы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Архитравы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Колонны и полуколонны</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Кессоны и купола</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu__col">
+                                    <h3 class="menu__title">Заголовок</h3>
+                                    <ul class="menu__list">
+                                        <li class="menu__item-inner">
+                                            <a href="#">Карнизы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Молдинги</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Плинтусы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Архитравы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Колонны и полуколонны</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Кессоны и купола</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="header__elem menu__item" data-menu-item>
+                    Обои
+                    <svg class="header__icon" width="10" height="5" viewBox="0 0 10 5" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 0.5L5 4.5L9 0.5" stroke="#4A4A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="menu__dropdown" data-dropdown>
+                        <div class="container">
+                            <div class="menu__wrapper">
+                                <div class="menu__col">
+                                    <h3 class="menu__title">Заголовок</h3>
+                                    <ul class="menu__list">
+                                        <li class="menu__item-inner">
+                                            <a href="#">Карнизы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Молдинги</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Плинтусы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Архитравы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Колонны и полуколонны</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Кессоны и купола</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu__col">
+                                    <h3 class="menu__title">Заголовок</h3>
+                                    <ul class="menu__list">
+                                        <li class="menu__item-inner">
+                                            <a href="#">Карнизы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Молдинги</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Плинтусы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Архитравы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Колонны и полуколонны</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Кессоны и купола</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu__col">
+                                    <h3 class="menu__title">Заголовок</h3>
+                                    <ul class="menu__list">
+                                        <li class="menu__item-inner">
+                                            <a href="#">Карнизы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Молдинги</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Плинтусы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Архитравы</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Колонны и полуколонны</a>
+                                        </li>
+                                        <li class="menu__item-inner">
+                                            <a href="#">Кессоны и купола</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="header__elem menu__item" data-menu-item>
+                    Фрески
+                    <svg class="header__icon" width="10" height="5" viewBox="0 0 10 5" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 0.5L5 4.5L9 0.5" stroke="#4A4A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </li>
+                <li class="header__elem menu__item" data-menu-item>
+                    Декоративная штукатурка
+                    <svg class="header__icon" width="10" height="5" viewBox="0 0 10 5" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 0.5L5 4.5L9 0.5" stroke="#4A4A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </li>
+                <li class="header__elem menu__item" data-menu-item>
+                    Краски
+                    <svg class="header__icon" width="10" height="5" viewBox="0 0 10 5" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 0.5L5 4.5L9 0.5" stroke="#4A4A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </li>
+                <li class="header__elem menu__item" data-menu-item>
+                    Ковры
+                </li>
+                <li class="header__elem menu__item" data-menu-item>
+                    Двери
+                </li>
+                <li class="header__elem menu__item" data-menu-item>
+                    Свет
+                </li>
+            </ul>
         </div>
     </div>
 </header>

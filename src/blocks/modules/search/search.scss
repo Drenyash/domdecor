@@ -1,0 +1,15 @@
+.search {
+  display: flex;
+  column-gap: rem(20);
+  align-items: center;
+  border: 1px solid $gray;
+  padding: rem(7) rem(20);
+  min-width: rem(275);
+  border-radius: rem(6);
+
+  input {
+    color: $gray;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

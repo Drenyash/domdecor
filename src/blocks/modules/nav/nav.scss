@@ -1,0 +1,12 @@
+.nav {
+  display: flex;
+  column-gap: rem(30);
+
+  &__link {
+    font-weight: 500;
+    color: $gray;
+    &:hover {
+      color: $primary;
+    }
+  }
+}

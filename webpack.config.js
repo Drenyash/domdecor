@@ -5,11 +5,11 @@ const pages = require('./src/js/pages');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // Insludes
-const head = fs.readFileSync(__dirname + '/src/includes/head.html');
+const head = fs.readFileSync(__dirname + "/src/includes/head.html");
 const sectionHeader = fs.readFileSync(__dirname + '/src/includes/section-header.html');
 const sectionFooter = fs.readFileSync(__dirname + '/src/includes/section-footer.html');
 
@@ -30,7 +30,11 @@ module.exports = {
             progress: true,
         },
         open: true,
-        watchFiles: ["src/*.html", "src/pages/*.html", "src/css/*.css"],
+        watchFiles: [
+            "src/*.html",
+            "src/pages/*.html",
+            "src/css/*.css"
+        ],
         hot: true,
         compress: false,
         port: 9000,

@@ -8,7 +8,13 @@
 @import "modules/input/input";
 @import "modules/main/main";
 @import "modules/section/section";
+@import "modules/section/header";
 @import "modules/title/title";
+@import "modules/search/search";
+@import "modules/user-nav/user-nav";
+@import "modules/nav/nav";
+@import "modules/select/select";
+@import "modules/menu/menu";
 
 @include r(1200) {
     
