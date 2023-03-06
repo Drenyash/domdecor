@@ -15,7 +15,5 @@
 @import "modules/nav/nav";
 @import "modules/select/select";
 @import "modules/menu/menu";
-
-@include r(1200) {
-    
-}
+@import "modules/slider/swiper";
+@import "modules/banners/banners";

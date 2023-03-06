@@ -1,11 +1,25 @@
 .button {
-    cursor: pointer;
-    @include r(1200) {
-       
-    }
-    &--disabled {
-        
-    }
-    &__text {
-    }
+  display: inline-block;
+  padding: rem(10) rem(24);
+  cursor: pointer;
+  border: 1px solid $primary;
+  border-radius: rem(6);
+  font-weight: 600;
+  color: $primary;
+
+  &:hover {
+    color: $white;
+    background-color: $primary;
+  }
+
+  @include r(992) {
+    font-size: rem(14);
+  }
+
+  &--disabled {
+    background-color: #5C7484;
+  }
+
+  &__text {
+  }
 }

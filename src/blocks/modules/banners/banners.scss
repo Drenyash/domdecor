@@ -1,0 +1,47 @@
+.banners {
+  &__date {
+    margin-bottom: rem(12);
+    font-size: rem(28);
+    font-weight: 600;
+    color: #5A7384;
+    @include r(992) {
+      font-size: rem(16);
+    }
+  }
+
+  &__title {
+    font-family: "cormorant", sans-serif;
+    margin-bottom: rem(16);
+    font-size: rem(52);
+    font-weight: 700;
+    @include r(992) {
+      font-size: rem(38);
+    }
+  }
+
+  &__slogan {
+    margin-bottom: rem(50);
+    font-size: rem(28);
+    font-weight: 500;
+    color: #5A7384;
+    @include r(992) {
+      font-size: rem(18);
+    }
+    @include r(576) {
+      margin-bottom: rem(20);
+    }
+  }
+
+  &__button {
+    @include r(768) {
+      display: none;
+    }
+
+    &_mobile {
+      display: none;
+      @include r(768) {
+        display: block;
+      }
+    }
+  }
+}
