@@ -13,20 +13,10 @@ module.exports = [
         template: "./src/index.html",
         filename: "index.html",
         inject: "body",
-        title: "Dranik",
+        title: "Дом декора",
         head,
         sectionHeader,
         sectionFooter,
         temp
-    }),
-    new HtmlWebpackPlugin({
-        template: "./src/pages/page.html",
-        filename: "page.html",
-        inject: "body",
-        title: "Title child page | Dranik",
-        head,
-        sectionHeader,
-        sectionFooter,
-        temp
-    })
+  }),
 ];
